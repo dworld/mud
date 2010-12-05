@@ -1,0 +1,135 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ASSGIN	lexer.h	/^    LBRACKET = '(', RBRACKET = ')', ASSGIN = '=', TOK_EOL = ';',$/;"	e	enum:mud::Token_type
+AUTO_ASSGIN	lexer.h	/^    NONE = 128, NUMBER, NAME, VAR, PRINT, AUTO_ASSGIN, TOK_EOF, DOUBLE$/;"	e	enum:mud::Token_type
+BUFFER_SIZE	lexer.h	/^    const static int BUFFER_SIZE = 3;$/;"	m	class:mud::Lexer
+CC	Makefile	/^CC = g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O0$/;"	m
+DIV	lexer.h	/^    PLUS = '+', MINUS = '-', MUL = '*', DIV = '\/', $/;"	e	enum:mud::Token_type
+DOUBLE	lexer.h	/^    NONE = 128, NUMBER, NAME, VAR, PRINT, AUTO_ASSGIN, TOK_EOF, DOUBLE$/;"	e	enum:mud::Token_type
+ENV_CITOR	parser.h	/^typedef map<string, double>::const_iterator ENV_CITOR;$/;"	t	namespace:mud
+ENV_ITOR	parser.h	/^typedef map<string, double>::iterator ENV_ITOR;$/;"	t	namespace:mud
+LBRACKET	lexer.h	/^    LBRACKET = '(', RBRACKET = ')', ASSGIN = '=', TOK_EOL = ';',$/;"	e	enum:mud::Token_type
+LDFLAGS	Makefile	/^LDFLAGS = -enable-auto-import$/;"	m
+Lexer	lexer.h	/^    Lexer() : is(cin), buf() {};$/;"	f	class:mud::Lexer
+Lexer	lexer.h	/^    explicit Lexer(istream& ss) : is(ss), buf() {};$/;"	f	class:mud::Lexer
+Lexer	lexer.h	/^class Lexer$/;"	c	namespace:mud
+LexerNotNull	lexer.h	/^    explicit LexerNotNull(const char* msg)$/;"	f	class:mud::LexerNotNull
+LexerNotNull	lexer.h	/^class LexerNotNull:public runtime_error$/;"	c	namespace:mud
+MINUS	lexer.h	/^    PLUS = '+', MINUS = '-', MUL = '*', DIV = '\/', $/;"	e	enum:mud::Token_type
+MUD_LEXER_H	lexer.h	2;"	d
+MUD_PARSER_H	parser.h	2;"	d
+MUL	lexer.h	/^    PLUS = '+', MINUS = '-', MUL = '*', DIV = '\/', $/;"	e	enum:mud::Token_type
+NAME	lexer.h	/^    NONE = 128, NUMBER, NAME, VAR, PRINT, AUTO_ASSGIN, TOK_EOF, DOUBLE$/;"	e	enum:mud::Token_type
+NONE	lexer.h	/^    NONE = 128, NUMBER, NAME, VAR, PRINT, AUTO_ASSGIN, TOK_EOF, DOUBLE$/;"	e	enum:mud::Token_type
+NUMBER	lexer.h	/^    NONE = 128, NUMBER, NAME, VAR, PRINT, AUTO_ASSGIN, TOK_EOF, DOUBLE$/;"	e	enum:mud::Token_type
+PLUS	lexer.h	/^    PLUS = '+', MINUS = '-', MUL = '*', DIV = '\/', $/;"	e	enum:mud::Token_type
+PRINT	lexer.h	/^    NONE = 128, NUMBER, NAME, VAR, PRINT, AUTO_ASSGIN, TOK_EOF, DOUBLE$/;"	e	enum:mud::Token_type
+PRI_EXPR	parser.h	/^    enum type{PRI_INVALID, PRI_NUMBER, PRI_IDENTITY, PRI_EXPR};$/;"	e	enum:mud::primary::type
+PRI_IDENTITY	parser.h	/^    enum type{PRI_INVALID, PRI_NUMBER, PRI_IDENTITY, PRI_EXPR};$/;"	e	enum:mud::primary::type
+PRI_INVALID	parser.h	/^    enum type{PRI_INVALID, PRI_NUMBER, PRI_IDENTITY, PRI_EXPR};$/;"	e	enum:mud::primary::type
+PRI_NUMBER	parser.h	/^    enum type{PRI_INVALID, PRI_NUMBER, PRI_IDENTITY, PRI_EXPR};$/;"	e	enum:mud::primary::type
+RBRACKET	lexer.h	/^    LBRACKET = '(', RBRACKET = ')', ASSGIN = '=', TOK_EOL = ';',$/;"	e	enum:mud::Token_type
+TOK_EOF	lexer.h	/^    NONE = 128, NUMBER, NAME, VAR, PRINT, AUTO_ASSGIN, TOK_EOF, DOUBLE$/;"	e	enum:mud::Token_type
+TOK_EOL	lexer.h	/^    LBRACKET = '(', RBRACKET = ')', ASSGIN = '=', TOK_EOL = ';',$/;"	e	enum:mud::Token_type
+Token	lexer.h	/^    Token() : type(NONE), str() {};$/;"	f	class:mud::Token
+Token	lexer.h	/^    Token(Token_type t, string s) : type(t), str(s) {};$/;"	f	class:mud::Token
+Token	lexer.h	/^    explicit Token(Token_type t):type(t) {};$/;"	f	class:mud::Token
+Token	lexer.h	/^    explicit Token(char op) :type(Token_type(op)), str() { str += op; };$/;"	f	class:mud::Token
+Token	lexer.h	/^class Token$/;"	c	namespace:mud
+Token_type	lexer.h	/^enum Token_type{$/;"	g	namespace:mud
+UnexpectedChar	lexer.h	/^    explicit UnexpectedChar(const char* msg)$/;"	f	class:mud::UnexpectedChar
+UnexpectedChar	lexer.h	/^    explicit UnexpectedChar(string msg)$/;"	f	class:mud::UnexpectedChar
+UnexpectedChar	lexer.h	/^class UnexpectedChar:public runtime_error$/;"	c	namespace:mud
+VAR	lexer.h	/^    NONE = 128, NUMBER, NAME, VAR, PRINT, AUTO_ASSGIN, TOK_EOF, DOUBLE$/;"	e	enum:mud::Token_type
+_type	parser.h	/^    type _type;$/;"	m	class:mud::primary
+add_expr	parser.h	/^    add_expr()$/;"	f	class:mud::add_expr
+add_expr	parser.h	/^class add_expr:public fragment$/;"	c	namespace:mud
+assgin_expr	parser.h	/^    assgin_expr()$/;"	f	class:mud::assgin_expr
+assgin_expr	parser.h	/^class assgin_expr:public fragment$/;"	c	namespace:mud
+buf	lexer.h	/^    list<Token>  buf;$/;"	m	class:mud::Lexer
+env	parser.cc	/^map<string, double> env;$/;"	m	namespace:mud	file:
+excute	parser.cc	/^double add_expr::excute()$/;"	f	class:mud::add_expr
+excute	parser.cc	/^double assgin_expr::excute()$/;"	f	class:mud::assgin_expr
+excute	parser.cc	/^double multi_expr::excute()$/;"	f	class:mud::multi_expr
+excute	parser.cc	/^double primary::excute()$/;"	f	class:mud::primary
+excute	parser.cc	/^double print_fun::excute()$/;"	f	class:mud::print_fun
+excute	parser.cc	/^double program::excute()$/;"	f	class:mud::program
+excute	parser.cc	/^double var_def::excute()$/;"	f	class:mud::var_def
+fragment	parser.h	/^class fragment$/;"	c	namespace:mud
+fragments	parser.h	/^    list<fragment*> fragments;$/;"	m	class:mud::program
+get	lexer.cc	/^Token Lexer::get()$/;"	f	class:mud::Lexer
+get_string	lexer.h	/^    const string&   get_string() const { return str; } $/;"	f	class:mud::Token
+get_type	lexer.h	/^    Token_type      get_type()   const { return type; };$/;"	f	class:mud::Token
+identity	parser.h	/^    string identity;$/;"	m	class:mud::assgin_expr
+identity	parser.h	/^    string identity;$/;"	m	class:mud::primary
+identity	parser.h	/^    string identity;$/;"	m	class:mud::var_def
+is	lexer.h	/^    istream& is;$/;"	m	class:mud::Lexer
+is_head_char	lexer.h	/^    bool  is_head_char(char c) { return isalpha(c) || (c == '_'); };$/;"	f	class:mud::Lexer
+is_name_char	lexer.h	/^    bool  is_name_char(char c) { return isalnum(c) || (c == '_');  };$/;"	f	class:mud::Lexer
+is_number_head	lexer.h	/^    bool  is_number_head(char c) $/;"	f	class:mud::Lexer
+main	lexer_test.cc	/^int main(int argc, char ** argv)$/;"	f
+main	main.cc	/^int main(int argc, char** argv)$/;"	f
+mud	lexer.cc	/^namespace mud$/;"	n	file:
+mud	lexer.h	/^namespace mud$/;"	n
+mud	parser.cc	/^namespace mud$/;"	n	file:
+mud	parser.h	/^namespace mud$/;"	n
+multi_expr	parser.h	/^    multi_expr()$/;"	f	class:mud::multi_expr
+multi_expr	parser.h	/^class multi_expr:public fragment$/;"	c	namespace:mud
+negative	parser.h	/^    bool negative;$/;"	m	class:mud::primary
+number	parser.h	/^    double number;$/;"	m	class:mud::primary
+op	parser.h	/^    Token_type op;$/;"	m	class:mud::add_expr
+op	parser.h	/^    Token_type op;$/;"	m	class:mud::multi_expr
+pAdd	parser.h	/^    add_expr* pAdd;$/;"	m	class:mud::assgin_expr
+pAssgin	parser.h	/^    assgin_expr* pAssgin;$/;"	m	class:mud::assgin_expr
+pAssgin	parser.h	/^    assgin_expr* pAssgin;$/;"	m	class:mud::print_fun
+pAssgin	parser.h	/^    assgin_expr* pAssgin;$/;"	m	class:mud::var_def
+pExpr	parser.h	/^    assgin_expr* pExpr;$/;"	m	class:mud::primary
+pLeft	parser.h	/^    add_expr* pLeft;$/;"	m	class:mud::add_expr
+pLeft	parser.h	/^    multi_expr* pLeft;$/;"	m	class:mud::multi_expr
+pRight	parser.h	/^    multi_expr*  pRight; $/;"	m	class:mud::add_expr
+pRight	parser.h	/^    primary* pRight;$/;"	m	class:mud::multi_expr
+parse	parser.cc	/^fragment* add_expr::parse(Lexer& l)$/;"	f	class:mud::add_expr
+parse	parser.cc	/^fragment* assgin_expr::parse(Lexer& l)$/;"	f	class:mud::assgin_expr
+parse	parser.cc	/^fragment* multi_expr::parse(Lexer& l)$/;"	f	class:mud::multi_expr
+parse	parser.cc	/^fragment* primary::parse(Lexer& l)$/;"	f	class:mud::primary
+parse	parser.cc	/^fragment* print_fun::parse(Lexer& l)$/;"	f	class:mud::print_fun
+parse	parser.cc	/^fragment* program::parse(Lexer& l)$/;"	f	class:mud::program
+parse	parser.cc	/^fragment* var_def::parse(Lexer& l)$/;"	f	class:mud::var_def
+parse_double	lexer.cc	/^Token Lexer::parse_double()$/;"	f	class:mud::Lexer
+parse_name	lexer.cc	/^Token Lexer::parse_name()$/;"	f	class:mud::Lexer
+primary	parser.cc	/^primary::primary()$/;"	f	class:mud::primary
+primary	parser.h	/^class primary:public fragment$/;"	c	namespace:mud
+print	parser.cc	/^void add_expr::print()$/;"	f	class:mud::add_expr
+print	parser.cc	/^void assgin_expr::print()$/;"	f	class:mud::assgin_expr
+print	parser.cc	/^void multi_expr::print()$/;"	f	class:mud::multi_expr
+print	parser.cc	/^void primary::print()$/;"	f	class:mud::primary
+print	parser.cc	/^void print_fun::print()$/;"	f	class:mud::print_fun
+print	parser.cc	/^void program::print()$/;"	f	class:mud::program
+print	parser.cc	/^void var_def::print()$/;"	f	class:mud::var_def
+print_fun	parser.h	/^    print_fun()$/;"	f	class:mud::print_fun
+print_fun	parser.h	/^class print_fun:public fragment$/;"	c	namespace:mud
+program	parser.h	/^    program()$/;"	f	class:mud::program
+program	parser.h	/^class program:public fragment$/;"	c	namespace:mud
+set_left	parser.cc	/^void add_expr::set_left(add_expr* left)$/;"	f	class:mud::add_expr
+set_left	parser.cc	/^void multi_expr::set_left(multi_expr* left)$/;"	f	class:mud::multi_expr
+set_op	parser.cc	/^void add_expr::set_op(Token_type v)$/;"	f	class:mud::add_expr
+set_op	parser.cc	/^void multi_expr::set_op(Token_type v)$/;"	f	class:mud::multi_expr
+str	lexer.h	/^    string str;$/;"	m	class:mud::Token
+type	lexer.h	/^    Token_type type;$/;"	m	class:mud::Token
+type	parser.h	/^    enum type{PRI_INVALID, PRI_NUMBER, PRI_IDENTITY, PRI_EXPR};$/;"	g	class:mud::primary
+unget	lexer.cc	/^void Lexer::unget(Token tok)$/;"	f	class:mud::Lexer
+var_def	parser.h	/^    var_def()$/;"	f	class:mud::var_def
+var_def	parser.h	/^class var_def:public fragment$/;"	c	namespace:mud
+~add_expr	parser.cc	/^add_expr::~add_expr()$/;"	f	class:mud::add_expr
+~assgin_expr	parser.cc	/^assgin_expr::~assgin_expr()$/;"	f	class:mud::assgin_expr
+~fragment	parser.h	/^    virtual ~fragment() {} ;$/;"	f	class:mud::fragment
+~multi_expr	parser.cc	/^multi_expr::~multi_expr()$/;"	f	class:mud::multi_expr
+~primary	parser.cc	/^primary::~primary()$/;"	f	class:mud::primary
+~print_fun	parser.cc	/^print_fun::~print_fun()$/;"	f	class:mud::print_fun
+~program	parser.cc	/^program::~program()$/;"	f	class:mud::program
+~var_def	parser.cc	/^var_def::~var_def()$/;"	f	class:mud::var_def

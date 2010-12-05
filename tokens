@@ -1,0 +1,7 @@
+var dn double = 99.5e10;
+var _in := 100;
+var result double;
+
+result=5*dn+_in/20-33*(dn-_in);
+
+print(result);

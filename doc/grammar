@@ -1,0 +1,122 @@
+﻿MUD语法
+v0.2
+
+1,简介
+
+    一个简单的解释型计算机语言，特性如下：
+    字符集，ASCII。
+    支持byte、int、double、bool和string类型。
+    支持if、for结构。
+    支持函数（内建和自定义）。
+
+1.1, 基本类型
+
+    1), byte
+
+    无符号整数，占用一个字节。
+
+    2), int
+
+    有符号整数，对应机器字长。
+
+    3), double
+
+    双精度浮点数。
+
+    4), bool
+
+    逻辑变量，值为true或false。
+
+    5), string
+
+    字符串，引用类型。
+
+1.2, 控制结构
+
+    1), if
+
+    if  <条件> 
+        <语句>
+
+    或 
+        
+    if  <条件> 
+        <语句>
+    else
+        <语句>
+
+    2), for
+
+    for  <条件>
+        <语句>
+
+1.3, 函数
+
+    func <函数名> (参数列表) 返回值
+
+1.4, 常量
+
+    1), bool
+
+    true, false
+
+    2), byte
+
+    '<字符>'            或
+    '\<转义字符>'       或
+    '\<1位16进制数>'    或
+    '\<2位16进制数>' 
+
+    3), int
+
+    number	    = ['0'-'9']*
+    interger    = ['+'| '-'] ['1'-'9'] number
+
+    4), string
+    
+    "<字符串>"，可包含转义字符，规则见byte常量
+
+    5), double
+
+    interger '.'number ['E'|'e'] interger
+
+2, 语法
+
+    program       = variable-def  program
+                    assgin-expr   program
+                    print-fun     program
+                    NULL
+
+    variable-def  = 'var' var-def-detail
+
+    var-def-detail 
+                  = type  identity [ '=' assgin-expr]
+                    identity ':=' assgin-expr
+
+    assgin-expr   = add-expr
+                    identity '=' assgin-expr:
+
+    add-expr      = multi-expr
+                    add-expr '+' multi-expr
+                    add-expr '-' multi-expr
+
+    multi-expr    = primary
+                    multi-expr '*' primary
+                    multi-expr '/' primary
+
+    primary       = double-liter
+                    identity
+                    '(' assgin-expr ')'
+                    '-'primary
+
+    type          = 'double'
+
+    print-fun     = 'print(' assgin-expr ')'
+
+3.	词法
+
+    number	        = ['0'-'9']*
+    interger        = ['+'| '-'] ['1'-'9'] number
+    double-liter    = interger '.'number ['E'|'e'] interger
+    identity        = [a-zA-Z_] a-zA-Z_0-9]*
+
