@@ -1,6 +1,6 @@
-TARGET  = mud.exe
+TARGET  = mud
 BUILDIR = build
-SOURCES = main.cc parser.cc lexer.cc
+SOURCES = main.cc parser.cc lexer.cc value.cc
 OBJS    = $(SOURCES:%.cc=$(BUILDIR)/%.o)
 DEPS	= $(SOURCES:%.cc=$(BUILDIR)/%.d)
 
